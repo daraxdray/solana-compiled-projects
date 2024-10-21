@@ -1,0 +1,19 @@
+[package]
+name = "solana-hello-world"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+borsh = "0.9.3"
+borsh-derive = "0.9.1"
+solana-program = "1.14.5"
+
+
+[dev-dependencies]
+solana-program-test = "1.14.5"
+solana-sdk = "~1.10.35"
+solana-client = ""
+
+[lib]
+name = "helloworld"
+crate-type = ["cdylib", "lib"]
